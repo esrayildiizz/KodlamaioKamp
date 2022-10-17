@@ -17,8 +17,14 @@ namespace GenericsIntro
 
         public void Add(T item)
         {
-            T[] tempArray = items;
+            T[] tempArray = items; //Eklenen itemler new lendiğinde kaybolur ve kaybolmasını istemediğimiz için biz bunları tempArray de saklarız.
             items = new T[items.Length+1];
+            for (int i = 0; i < tempArray.Length; i++)
+            {
+                items[i] = tempArray[i];
+            }
+
+            items [items.Length - 1] = item;
         }
     }
 }
