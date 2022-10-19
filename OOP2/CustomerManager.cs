@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP2
 {
-    class CustomerManager
+    class CustomerManager //Miras alma (inheritance)
     {
+        public void Add(Musteri musteri)
+        {
+            
+        }
     }
 }
