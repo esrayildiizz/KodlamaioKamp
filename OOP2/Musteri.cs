@@ -13,8 +13,8 @@ namespace OOP2
         public string Adi { get; set; }
         public string Soyadi { get; set; }
         public string SirketAdi { get; set; }
-        public string TcNo { get; set; }
-        public string VergiNo { get; set; }
+        public string TcNo { get; set; } //bir veri üzerinde matematiksel işlem yapmicaksak string tanımlanabilir.
+        public string VergiNo { get; set; } //bir veri üzerinde matematiksel işlem yapmicaksak string tanımlanabilir.
 
     }
 }
