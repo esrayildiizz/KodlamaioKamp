@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    class KrediManager
+    interface KrediManager //interface aslında benim şablonum //İmza aynı fakat içerik farklıysa interfaceler bu durumlar için kullanılır.
     {
-        public void Hesapla()
-        {
-
-        }
+        void Hesapla();
     }
 }
