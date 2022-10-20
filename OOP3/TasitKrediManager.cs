@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    class TasitKrediManager : KrediManager
+    class TasitKrediManager : IKrediManager
     {
         public void Hesapla()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Taşit kredi ödeme planı oluşturuldu.");
         }
     }
 }
