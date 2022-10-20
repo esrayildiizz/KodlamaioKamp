@@ -13,5 +13,12 @@ namespace OOP3
         {
             krediManager.Hesapla();
         }
+
+        //ben hangi kredi türünden bilgilendirme istiyorsam o bana liste olarak dönsün .O liste de IKrediManager den alsın bilgileri
+        //çünkü IKrediManager tüm kredi türlerinin referansını tutuyor.
+        public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler)
+        {
+            
+        }
     }
 }
