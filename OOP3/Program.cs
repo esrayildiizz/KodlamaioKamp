@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    class IhtiyacKrediManager : KrediManager
+    class Program
     {
-        public void Hesapla()
+        static void Main(string[] args)
         {
-            throw new NotImplementedException();
         }
     }
 }

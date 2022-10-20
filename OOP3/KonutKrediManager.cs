@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    class KonutKrediManager:KrediManager
+    class KonutKrediManager : KrediManager
     {
+        public void Hesapla()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
