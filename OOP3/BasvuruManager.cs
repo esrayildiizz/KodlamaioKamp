@@ -19,7 +19,11 @@ namespace OOP3
         //çünkü IKrediManager tüm kredi türlerinin referansını tutuyor.
         public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler)
         {
-            
+            //burada bir liste olduğu için her bir krediyi tek tek dolaşmak gerekir.
+            foreach (var kredi in krediler)
+            {
+                kredi.Hesapla(); //listedeki her bir kredinin hesabını yap.
+            }
         }
     }
 }
