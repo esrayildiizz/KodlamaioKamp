@@ -9,7 +9,9 @@ namespace OOP3
     class BasvuruManager
     {
         //Önemli
-        public void BasvuruYap(IKrediManager krediManager) //Parantez içine IKrediManager yazdık çünkü tüm kredi tiplerinin referens tutucusudur.
+        //Parantez içine IKrediManager yazdık çünkü tüm kredi tiplerinin referens tutucusudur.
+        //Ben bu metodu aynı zamanda loglamak da istediğim ile virgül koyup ILoggerService yi de eklendim.
+        public void BasvuruYap(IKrediManager krediManager,ILoggerService loggerService) 
         {
             krediManager.Hesapla();
         }
@@ -25,5 +27,7 @@ namespace OOP3
                 kredi.Hesapla(); //listedeki her bir kredinin hesabını yap.
             }
         }
+
+
     }
 }
