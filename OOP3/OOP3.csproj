@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BasvuruManager.cs" />
     <Compile Include="IhtiyacKrediManager.cs" />
+    <Compile Include="ILoggerService.cs" />
     <Compile Include="KonutKrediManager.cs" />
     <Compile Include="IKrediManager.cs" />
     <Compile Include="Program.cs" />
