@@ -16,16 +16,19 @@ namespace OOP3
             IKrediManager tasitKrediManager = new TasitKrediManager();
             IKrediManager konutKrediManager = new KonutKrediManager();
 
+            //elimde iki tane loglayıcı var.
+            ILoggerService datababaseloggerService = new DatabaseLoggerService();
+            ILoggerService fileloggerService = new FileLoggerService();
+
 
             BasvuruManager basvuruManager = new BasvuruManager();
-            //basvuruManager.BasvuruYap(konutKrediManager);
-            //basvuruManager.BasvuruYap(tasitKrediManager);
-            //basvuruManager.BasvuruYap(ıhtiyacKrediManager);
+            basvuruManager.BasvuruYap(konutKrediManager, new DatabaseLoggerService());
+            
 
 
             List<IKrediManager> krediler = new List<IKrediManager> {ıhtiyacKrediManager};
 
-            basvuruManager.KrediOnBilgilendirmesiYap(krediler);
+            //basvuruManager.KrediOnBilgilendirmesiYap(krediler);
             
 ;
         }
