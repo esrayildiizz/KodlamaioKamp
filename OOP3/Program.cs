@@ -15,18 +15,24 @@ namespace OOP3
             IKrediManager ıhtiyacKrediManager = new IhtiyacKrediManager();
             IKrediManager tasitKrediManager = new TasitKrediManager();
             IKrediManager konutKrediManager = new KonutKrediManager();
+            IKrediManager esnafKrediManager = new EsnafKrediManager();
 
             //elimde iki tane loglayıcı var.
-            ILoggerService datababaseloggerService = new DatabaseLoggerService();
-            ILoggerService fileloggerService = new FileLoggerService();
+            ILoggerService datababaseLoggerService = new DatabaseLoggerService();
+            ILoggerService fileLoggerService = new FileLoggerService();
+            ILoggerService smsLoggerService = new SmsLoggerService(); //instance oluşturmuş oluyoruz.
+
+            //Kendi listemi oluşturdum ve adını loggers koydum.
+            List<ILoggerService> loggers = new List<ILoggerService> { new DatabaseLoggerService(), new SmsLoggerService(), new FileLoggerService() };
+
 
 
             BasvuruManager basvuruManager = new BasvuruManager();
-            basvuruManager.BasvuruYap(konutKrediManager, new DatabaseLoggerService());
+            basvuruManager.BasvuruYap(konutKrediManager, loggers); //Burada istediğimi çağırırım.
+            // yukarı parantez içine :( new EsnafKrediManager(), new DatabaseLoggerService() )da yazabilirim. Yani ister böyle istersem de instance halini yazabilirim.
             
-
-
-            List<IKrediManager> krediler = new List<IKrediManager> {ıhtiyacKrediManager};
+            //krediler adında listemi oluşturdum.Bunu istediğim yere çağırabilirim.
+            List<IKrediManager> krediler = new List<IKrediManager> {ıhtiyacKrediManager,tasitKrediManager,esnafKrediManager,konutKrediManager};
 
             //basvuruManager.KrediOnBilgilendirmesiYap(krediler);
             
