@@ -23,7 +23,7 @@ namespace OOP3
             //basvuruManager.BasvuruYap(ıhtiyacKrediManager);
 
 
-            List<IKrediManager> krediler = new List<IKrediManager> { };
+            List<IKrediManager> krediler = new List<IKrediManager> {ıhtiyacKrediManager};
 
             basvuruManager.KrediOnBilgilendirmesiYap(krediler);
             

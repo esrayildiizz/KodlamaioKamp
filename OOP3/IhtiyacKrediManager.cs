@@ -12,5 +12,6 @@ namespace OOP3
         {
             Console.WriteLine("İhtiyaç kredi ödeme planı oluşturuldu.");
         }
+       
     }
 }
