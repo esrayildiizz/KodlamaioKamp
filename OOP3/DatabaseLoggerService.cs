@@ -11,7 +11,7 @@ namespace OOP3
     {
         public void Log()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Veritanabına loglandı.");
         }
     }
 }

@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasvuruManager.cs" />
+    <Compile Include="DatabaseLoggerService.cs" />
+    <Compile Include="FileLoggerService.cs" />
     <Compile Include="IhtiyacKrediManager.cs" />
     <Compile Include="ILoggerService.cs" />
     <Compile Include="KonutKrediManager.cs" />
