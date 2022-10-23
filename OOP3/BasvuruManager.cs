@@ -11,9 +11,11 @@ namespace OOP3
         //Önemli
         //Parantez içine IKrediManager yazdık çünkü tüm kredi tiplerinin referens tutucusudur.
         //Ben bu metodu aynı zamanda loglamak da istediğim ile virgül koyup ILoggerService yi de eklendim.
+        //Soyut hallerini parantez içine yazıp somut hallerini aşağıya yazıyorum.
         public void BasvuruYap(IKrediManager krediManager,ILoggerService loggerService) 
         {
             krediManager.Hesapla();
+            loggerService.Log();
         }
 
 
