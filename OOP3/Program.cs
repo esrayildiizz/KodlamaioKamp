@@ -22,6 +22,8 @@ namespace OOP3
             ILoggerService fileLoggerService = new FileLoggerService();
             ILoggerService smsLoggerService = new SmsLoggerService(); //instance oluşturmuş oluyoruz.
 
+
+
             //Kendi listemi oluşturdum ve adını loggers koydum.
             List<ILoggerService> loggers = new List<ILoggerService> { new DatabaseLoggerService(), new SmsLoggerService(), new FileLoggerService() };
 
